@@ -93,7 +93,8 @@ html {
 
 
 /* Typography ========================================================================== */
-    
+
+/* note to self, establish modular scale */   
 h1  {
   font-family: "brandon-grotesque",sans-serif;
   font-style: normal;
@@ -104,14 +105,33 @@ h1  {
   line-height: 1em;
 }
 
+h2 {
+  font-family: "brandon-grotesque",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: #5480B2;
+  font-size: 2.5em;
+  margin: 0 0 .5rem 0;
+  line-height: 1em;
+}
+
 p {
-  font-family: "ff-tisa-web-pro",serif;
+  font-family: "ff-tisa-web-pro", serif;
   font-style: normal;
   font-weight: 400; 
   color: #444444;
   font-size: 1.2em;
   line-height: 1.5em;
   }
+
+p em {
+  font-family: "ff-tisa-web-pro", serif;
+  font-style: italic;
+  font-weight: 400; 
+  color: #444444;
+  font-size: 1em;
+  line-height: 1.5em;
+}
 
 a {
   text-decoration: none;
@@ -171,6 +191,10 @@ nav ul li a {
   color: #fff;
 }
 
+nav#project1 {
+  background-color: #DAE3F1;
+}
+
 @media (min-width: 40rem) { 
   nav .centered {text-align: left;}
 }
@@ -188,12 +212,6 @@ header {
   padding: 3rem 0;
 }
 
-/*header img {
-  margin-top: 2rem;
-  max-width: 75%;
-  border-radius: 50%;
-  vertical-align: middle;
-}*/
 
 ul#cyclelist {
   width:100%;
@@ -220,9 +238,23 @@ header p {
   position: relative;
 }
 
+header#project1 {
+  max-width:100%;
+  padding: 0 0;
+  background-color: #DAE3F1;
+}
+
+header#project1 img {
+  max-width: 100%;
+}
+
+header#project1 .column {
+  margin-bottom: 0;
+}
+
+/* Medium screens (640px) */
 @media (min-width: 40rem) { 
   header {padding: 4rem 0;}
-  header img {min-width: 100%;}
   header p {position: static;}
 
 }
@@ -433,13 +465,39 @@ path.stroke-thin {
   section h1 {white-space: nowrap;}
 
 }
+/* Article ========================================================================== */
 
+article {
+  padding: 1.5rem 0;
+}
+
+article p {
+  max-width: 40em;
+  margin: 0 auto;
+
+}
+
+
+/* Medium screens (640px) */
+@media (min-width: 40rem) { 
+  article {padding: 3rem 0;}
+  section .centered {text-align: left;}
+  .btn-small {display: none;}
+  .btn-large {display: inline-block;}
+  .small-show {display: none;}
+  .small-no-show {display: inline-block;}
+}
+
+/* Large screens (1024px) */
+@media (min-width: 64rem) { 
+  article {padding: 3rem 0;}
+  section h1 {white-space: nowrap;}
+}
 
 /* Footer ========================================================================== */
 
 footer {
   background-color: #5480B2;
-  height: 10rem;
   padding-top: 2rem;
 }
 
