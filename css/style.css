@@ -99,17 +99,18 @@ h1  {
   font-style: normal;
   font-weight: 700;
   color: #5480B2;
-  font-size: 2em;
+  font-size: 3em;
   margin: 0 0 .5rem 0;
+  line-height: 1em;
 }
 
 p {
   font-family: "ff-tisa-web-pro",serif;
   font-style: normal;
-  font-weight: 300; 
-  color: #777;
-  font-size: 1em;
-  line-height: 1.3em;
+  font-weight: 400; 
+  color: #444444;
+  font-size: 1.2em;
+  line-height: 1.5em;
   }
 
 a {
@@ -144,20 +145,17 @@ nav .column {
 nav span {
   font-family: "brandon-grotesque",sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 1em;
-  text-transform: uppercase;
   color: #fff;
   display:inline-block; 
   vertical-align:middle
   display: block;
   white-space: nowrap;
-
 }
 
 nav ul {
   list-style-type: none;
-
 }
 
 nav ul li {
@@ -168,11 +166,9 @@ nav ul li {
 nav ul li a {
   font-family: "brandon-grotesque",sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 1em;
-  text-transform: uppercase;
   color: #fff;
-
 }
 
 @media (min-width: 40rem) { 
@@ -225,7 +221,7 @@ header p {
 }
 
 @media (min-width: 40rem) { 
-  header {padding: 50px 0px;}
+  header {padding: 4rem 0;}
   header img {min-width: 100%;}
   header p {position: static;}
 
@@ -233,6 +229,8 @@ header p {
  
 /* Large screens (1024px) */
 @media (min-width: 64rem) { 
+  header {padding: 8rem 0;}
+
 }
 
 /* Section ========================================================================== */
@@ -414,9 +412,9 @@ path.stroke-thin {
 
 .slide_in:hover div:nth-child(3) {
     left: 0px;
-    transition: left 0.3s ease;
-    -webkit-transition: left 0.3s ease;
-    -moz-transition: left 0.3s ease;
+    transition: left 0.35s ease;
+    -webkit-transition: left 0.35s ease;
+    -moz-transition: left 0.35s ease;
 }
 
 /* Medium screens (640px) */
@@ -432,17 +430,8 @@ path.stroke-thin {
 /* Large screens (1024px) */
 @media (min-width: 64rem) { 
   section {padding: 3rem 0;}
+  section h1 {white-space: nowrap;}
 
-}
-
-@media screen and (max-width: 1260px) {
-    .back {
-        width: 50%;
-    }
-}
-
-@media screen and (max-width: 840px) {
-    .back {width: 100%;}
 }
 
 
@@ -457,9 +446,8 @@ footer {
 footer a {
   font-family: "brandon-grotesque",sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 1em;
-  text-transform: uppercase;
   color: #fff;
 
 
