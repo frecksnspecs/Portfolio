@@ -285,7 +285,7 @@ section:nth-child(even){
   display: inline-block;
   border: 2px solid #92C4FF;
   border-radius: 5px;
-  padding: 1em 1em;
+  padding: .5em 1em;
   white-space: nowrap;
   margin: 40px 0px; 
   display: none;
