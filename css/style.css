@@ -1,0 +1,438 @@
+/* CSS for Sam Huskins's Portfolio Web Site */
+
+/* Layout ========================================================================== */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Small screens (default) */
+html { 
+  font-size: 100%; 
+  background-color: #fff;
+}
+ 
+/* Medium screens (640px) */
+@media (min-width: 40rem) { 
+  html { font-size: 112%; }
+  section {padding-top: 2rem;}
+  h1.centered {text-align: left;}
+}
+ 
+/* Large screens (1024px) */
+@media (min-width: 64rem) { 
+  html { font-size: 120%;}
+  section {padding-top: 5rem;}
+}
+
+
+.container {
+  margin: 0 auto;
+  max-width: 60rem;
+  width: 90%;
+}
+
+/* Utilities ========================================================================== */
+
+.remove-padding { padding-bottom: 0; }
+.remove-border { border: none; }
+
+.small-no-show {
+  display: none;
+}
+
+.centered {
+  text-align: center;
+  vertical-align: middle;
+  height: 100%;
+}
+
+
+/* Mobile First Grid
+   ========================================================================== */
+
+.column { margin-bottom: 1.5rem; }
+
+@media (min-width: 40rem) {
+  .column {
+    float: left;
+    margin: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .column.full { width: 100%; }
+  .column.three-fourths {width: 75%;}
+  .column.two-thirds { width: 66.7%; }
+  .column.half { width: 50%; }
+  .column.third { width: 33.3%; }
+  .column.fourth { width: 24.95%; }
+  .column.flow-opposite { float: right; }
+}
+
+
+/* Typography ========================================================================== */
+    
+h1  {
+  font-family: "brandon-grotesque",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: #5480B2;
+  font-size: 2em;
+  margin: 0 0 .5rem 0;
+}
+
+p {
+  font-family: "ff-tisa-web-pro",serif;
+  font-style: normal;
+  font-weight: 300; 
+  color: #777;
+  font-size: 1em;
+  line-height: 1.3em;
+  }
+
+a {
+  text-decoration: none;
+  color: #FFD892 ;
+
+}
+
+@-webkit-keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+
+/* Nav ========================================================================== */
+nav {
+  background: #92C4FF;
+  min-height: 50px;
+  overflow: hidden;
+  padding-top: 14px;
+}
+
+nav .column {
+  margin-bottom: 5px;
+}
+
+nav span {
+  font-family: "brandon-grotesque",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #fff;
+  display:inline-block; 
+  vertical-align:middle
+  display: block;
+  white-space: nowrap;
+
+}
+
+nav ul {
+  list-style-type: none;
+
+}
+
+nav ul li {
+  display: inline;
+  padding: 0 1em;
+}
+
+nav ul li a {
+  font-family: "brandon-grotesque",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #fff;
+
+}
+
+@media (min-width: 40rem) { 
+  nav .centered {text-align: left;}
+}
+ 
+/* Large screens (1024px) */
+@media (min-width: 64rem) { 
+
+}
+
+
+
+/* Header ========================================================================== */
+header {
+  background-color: #92C4FF;
+  padding: 3rem 0;
+}
+
+/*header img {
+  margin-top: 2rem;
+  max-width: 75%;
+  border-radius: 50%;
+  vertical-align: middle;
+}*/
+
+ul#cyclelist {
+  width:100%;
+  height: 100%;
+  overflow:hidden;
+  border: 1px solid black;
+  margin: 0 auto;
+  text-align: center;
+}
+
+ul#cyclelist li {
+  font-size:1em;
+  opacity:1;
+  position:relative;
+  padding: 0 0;
+}
+
+header h1 {
+  color: #fff;
+}
+
+header p {
+  color: #fff;
+  position: relative;
+}
+
+@media (min-width: 40rem) { 
+  header {padding: 50px 0px;}
+  header img {min-width: 100%;}
+  header p {position: static;}
+
+}
+ 
+/* Large screens (1024px) */
+@media (min-width: 64rem) { 
+}
+
+/* Section ========================================================================== */
+
+section {
+  background: #fff;
+  padding: 1.5rem 0;
+}
+
+section ul {
+  width: 100%;
+  list-style: none;
+  margin-top: 1rem;
+}
+section li {
+  border-radius: 50%;
+  color: #FFD892;
+  font-family: "brandon-grotesque", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+section:nth-child(even){
+  background-color: #F9F9FA;
+}
+
+.btn-small {
+  font-family: "brandon-grotesque", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  color: #92C4FF;
+  text-transform: uppercase;
+  display: inline-block;
+  border: 2px solid #92C4FF;
+  border-radius: 5px;
+  padding: 15px 25px;
+  white-space: nowrap;
+  margin-top: 1rem; 
+}
+
+.btn-large {
+  font-family: "brandon-grotesque", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  color: #92C4FF;
+  text-transform: uppercase;
+  display: inline-block;
+  border: 2px solid #92C4FF;
+  border-radius: 5px;
+  padding: 1em 1em;
+  white-space: nowrap;
+  margin: 40px 0px; 
+  display: none;
+  -webkit-transition: background-color .5s, border .5s, color .2s  ease-in;
+  -moz-transition: background-color .5s, border .5s, color .2s ease-in;
+  -o-transition: background-color .5s, border .5s, color .2s ease-in;
+  transition: background-color .5s, border .5s, color .2s ease-in;
+
+}
+
+.btn-large:hover {
+  background-color: #5480B2;
+  color: #fff;
+  border: 2px solid #5480B2;
+}
+
+section img {
+  max-width: 100%;
+}
+
+.drawings {
+  position: relative;
+}
+
+.illustration {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 100%;
+  max-height: 100%;
+  opacity: 0;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.show {
+  opacity: 1;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.line-drawing,
+.illustration {
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.line-drawing {
+  max-height: 600px;
+}
+
+.line-drawing path {
+  fill: none;
+  stroke: #D9D9D9;
+  stroke-width: 2;
+}
+
+svg {
+  pointer-events: none;
+}
+path.line-round {
+  stroke-linecap: round;
+}
+
+path.stroke-medium {
+  stroke-width: 2;
+}
+
+path.stroke-thin {
+  stroke-width: 1;
+}
+
+
+/* Medium screens (640px) */
+@media (min-width: 40rem) { 
+  section {padding: 5rem 0;}
+  section .centered {text-align: left;}
+  .btn-small {display: none;}
+  .btn-large {display: inline-block;}
+  .small-show {display: none;}
+  .small-no-show {display: inline-block;}
+}
+
+/* Large screens (1024px) */
+@media (min-width: 64rem) { 
+  section {padding: 3rem 0;}
+
+}
+
+
+
+
+/* Footer ========================================================================== */
+
+footer {
+  background-color: #5480B2;
+  height: 10rem;
+  padding-top: 2rem;
+}
+
+footer a {
+  font-family: "brandon-grotesque",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #fff;
+
+
+}
+/* Animation (featuring Dan Eden) ========================================================================== */
+
+.flash {
+  -webkit-animation-name: flash ;
+  animation-name: flash;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+.flash:nth-child(2) {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  animation-delay: .3s;
+  -moz-animation-delay: .3s;
+  -webkit-animation-delay: .3s;
+}
+
+.flash:nth-child(3){
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  animation-delay: .6s;
+  -moz-animation-delay: .6s;
+  -webkit-animation-delay: .6s;
+
+}
+
+/* Clearfix by Nicolas Gallagher ========================================================================== */
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
