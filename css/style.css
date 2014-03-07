@@ -68,6 +68,16 @@ html {
   height: 100%;
 }
 
+/* Clearfix by Nicolas Gallagher */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
 
 /* Mobile First Grid
    ========================================================================== */
@@ -271,7 +281,7 @@ header#juqbox {
 /* Large screens (1024px) */
 @media (min-width: 64rem) { 
   header {padding: 8rem 0;}
-  header#bus {height: 750px;}
+  header#bus {height: 650px;}
   header#bus img {min-width: 50%;}
 
 }
@@ -485,8 +495,6 @@ path.stroke-thin {
 
 }
 /* Article ========================================================================== */
-
-
 article p {
   max-width: 30em;
   margin: 1rem 0;
@@ -516,9 +524,7 @@ figure img {
 
 /* Medium screens (640px) */
 @media (min-width: 40rem) { 
-  section .centered {text-align: left;}
-  .btn-small {display: none;}
-  .btn-large {display: inline-block;}
+  article {margin-bottom: 3rem;}
   .small-show {display: none;}
   .small-no-show {display: inline-block;}
   article img.split {max-width: 47%;}
@@ -528,7 +534,6 @@ figure img {
 
 /* Large screens (1024px) */
 @media (min-width: 64rem) { 
-  section h1 {white-space: nowrap;}
   h2 {margin-top: 4rem;}
   h3 {margin-top: 2rem; }
 
@@ -550,7 +555,7 @@ footer a {
 
 
 }
-/* Animation (featuring Dan Eden) ========================================================================== */
+/* Animation by Dan Eden ========================================================================== */
 
 .flash {
   -webkit-animation-name: flash ;
@@ -578,13 +583,3 @@ footer a {
 
 }
 
-/* Clearfix by Nicolas Gallagher ========================================================================== */
-
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
-
-.clearfix:after { clear: both; }
-.clearfix { *zoom: 1; }
