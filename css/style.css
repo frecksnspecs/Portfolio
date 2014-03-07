@@ -218,7 +218,11 @@ nav#bus {
 }
 
 nav#juqbox {
-  background-color: #AFCDD9;
+  background-color: #F9846F;
+}
+
+nav#stride {
+  background-color: #9DCDB4;
 }
 
 @media (min-width: 40rem) { 
@@ -268,8 +272,13 @@ header#bus .column {
 }
 
 header#juqbox {
-  background-color: #AFCDD9;
+  background-color: #F9846F;
 }
+
+header#stride {
+  background-color: #9DCDB4;
+}
+
 /* Medium screens (640px) */
 @media (min-width: 40rem) { 
   header {padding: 4rem 0;}
