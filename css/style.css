@@ -236,7 +236,7 @@ nav#stride {
 
 /* Header ========================================================================== */
 header {
-  background-color: #92C4FF;
+  background-color: #ffffff;
   padding: 3rem 0;
 }
 
@@ -296,8 +296,11 @@ header#stride {
 /* Section ========================================================================== */
 
 section {
-  background: #fff;
   padding: 1.5rem 0;
+}
+
+section#bus {
+  background-color: red;
 }
 
 section ul {
@@ -312,10 +315,6 @@ section li {
   font-style: normal;
   font-weight: 400;
   font-size: 1em;
-}
-
-section:nth-child(even){
-  background-color: #F9F9FA;
 }
 
 section img {
