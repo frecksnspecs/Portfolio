@@ -53,6 +53,8 @@ html {
   width: 90%;
 }
 
+
+
 /* Utilities ========================================================================== */
 
 .remove-padding { padding-bottom: 0; }
@@ -123,7 +125,6 @@ h2 {
   font-size: 3em;
   margin: 1rem 0 0 0;
   line-height: 1em;
-  text-transform: uppercase;
 }
 
 h3 {
@@ -161,14 +162,11 @@ a {
 
 }
 
-@-webkit-keyframes flash {
-  0%, 50%, 100% {
-    opacity: 1;
+::selection {
+  background: #92C4FF; /* Safari */
   }
-
-  25%, 75% {
-    opacity: 0;
-  }
+::-moz-selection {
+  background: #92C4FF; /* Firefox */
 }
 
 
@@ -530,6 +528,12 @@ figure img {
   margin: 0 auto;
 }
 
+.border {
+  border: 1px solid #D9D9D9;
+  -webkit-box-shadow: 4px 4px 1px 0px rgba(204,204,205,1);
+  -moz-box-shadow: 4px 4px 1px 0px rgba(204,204,205,1);
+  box-shadow: 4px 4px 1px 0px rgba(204,204,205,1);
+}
 
 /* Medium screens (640px) */
 @media (min-width: 40rem) { 
@@ -539,6 +543,8 @@ figure img {
   article img.split {max-width: 47%;}
   h2 {margin-top: 4rem;}
   h3 {margin-top: 2rem; }
+  .p-align {margin-top: 5rem;}
+
 }
 
 /* Large screens (1024px) */
@@ -564,31 +570,3 @@ footer a {
 
 
 }
-/* Animation by Dan Eden ========================================================================== */
-
-.flash {
-  -webkit-animation-name: flash ;
-  animation-name: flash;
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-}
-
-.flash:nth-child(2) {
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-  animation-delay: .3s;
-  -moz-animation-delay: .3s;
-  -webkit-animation-delay: .3s;
-}
-
-.flash:nth-child(3){
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-  animation-delay: .6s;
-  -moz-animation-delay: .6s;
-  -webkit-animation-delay: .6s;
-
-}
-
