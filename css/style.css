@@ -111,7 +111,7 @@ h1  {
   font-family: "brandon-grotesque",sans-serif;
   font-style: normal;
   font-weight: 700;
-  color: #5480B2;
+  color: #ffffff;
   font-size: 3em;
   margin: 0 0 .5rem 0;
   line-height: 1em;
@@ -142,7 +142,7 @@ p {
   font-family: "ff-tisa-web-pro", serif;
   font-style: normal;
   font-weight: 400; 
-  color: #444444;
+  color: #fff;
   font-size: 1.2em;
   line-height: 1.5em;
 }
@@ -172,14 +172,30 @@ a {
 
 /* Nav ========================================================================== */
 nav {
-  background: #92C4FF;
   min-height: 50px;
   overflow: hidden;
   padding-top: 14px;
+  border-top: 5px solid #444444;
+}
+
+nav#bus {
+  background-color: #DAE3F1;
+}
+
+nav#juqbox {
+  background-color: #F9846F;
+}
+
+nav#stride {
+  background-color: #9DCDB4;
 }
 
 nav .column {
   margin-bottom: 5px;
+}
+
+nav span a {
+  color: #92C4FF;
 }
 
 nav span {
@@ -187,7 +203,7 @@ nav span {
   font-style: normal;
   font-weight: 400;
   font-size: 1em;
-  color: #fff;
+  color: #444444;
   display:inline-block; 
   vertical-align:middle
   display: block;
@@ -208,20 +224,9 @@ nav ul li a {
   font-style: normal;
   font-weight: 400;
   font-size: 1em;
-  color: #fff;
+  color: #444444;
 }
 
-nav#bus {
-  background-color: #DAE3F1;
-}
-
-nav#juqbox {
-  background-color: #F9846F;
-}
-
-nav#stride {
-  background-color: #9DCDB4;
-}
 
 @media (min-width: 40rem) { 
   nav .centered {text-align: left;}
@@ -241,11 +246,11 @@ header {
 }
 
 header h1 {
-  color: #fff;
+  color: #444444;
 }
 
 header p {
-  color: #fff;
+  color: #444444;
   position: relative;
 }
 
@@ -300,7 +305,15 @@ section {
 }
 
 section#bus {
-  background-color: red;
+  background-color: #94C0FF;
+}
+
+section#juqbox {
+  background-color: #FFAF9E;
+}
+
+section#stride {
+  background-color: #ABDBC1;
 }
 
 section ul {
@@ -356,7 +369,7 @@ section img {
 
 .line-drawing path {
   fill: none;
-  stroke: #D9D9D9;
+  stroke: #ffffff;
   stroke-width: 2;
 }
 
@@ -385,10 +398,10 @@ path.stroke-thin {
   font-style: normal;
   font-weight: 400;
   font-size: 1em;
-  color: #92C4FF;
+  color: #ffffff;
   text-transform: uppercase;
   display: inline-block;
-  border: 2px solid #92C4FF;
+  border: 2px solid #ffffff;
   border-radius: 5px;
   padding: 15px 25px;
   white-space: nowrap;
@@ -401,7 +414,7 @@ path.stroke-thin {
   font-weight: 400;
   font-size: 1em;
   line-height: 1em;
-  color: #92C4FF;
+  color: #ffffff;
   position: relative;
   width: 90px;
   height: 45px;
@@ -411,17 +424,15 @@ path.stroke-thin {
 
 }
 
-
 .btn-large:hover {
     cursor: pointer;
 }
-
 
 /* Slide in Animation */
 /* Note: circle fill expand from center animation */
 .slide_in {
   overflow: hidden;
-  border: 2px solid #92C4FF;
+  border: 2px solid #ffffff;
   border-radius: 5px;
 
 }
@@ -439,11 +450,11 @@ path.stroke-thin {
 }
 
 .slide_in div:nth-child(1) {
-  color: #92C4FF;
+  color: #ffffff;
 }
 
 .slide_in div:nth-child(2) {
-  background-color: #5480B2;
+  background-color: #ffffff;
   width: 115px;
   transition: all 0.2s ease;
   -webkit-transition: all 0.2s ease;
@@ -456,7 +467,7 @@ path.stroke-thin {
 }
 
 .slide_in div:nth-child(3) {
-  color: #ffffff;
+  color: red;
   left: -150px;
   transition: left 0.2s ease;
   -webkit-transition: left 0.2s ease;
@@ -465,7 +476,7 @@ path.stroke-thin {
 }
 
 .slide_in:hover {
-  border: 2px solid #5480B2; 
+  border: 2px solid #ffffff; 
 }
 
 .slide_in:hover div:nth-child(2) {
@@ -504,6 +515,7 @@ path.stroke-thin {
 article p {
   max-width: 30em;
   margin: 1rem 0;
+  color: #444444;
 
 }
 article ul {
@@ -556,7 +568,7 @@ figure img {
 /* Footer ========================================================================== */
 
 footer {
-  background-color: #5480B2;
+  background-color: #fffff;
   padding-top: 2rem;
 }
 
@@ -565,7 +577,7 @@ footer a {
   font-style: normal;
   font-weight: 400;
   font-size: 1em;
-  color: #fff;
+  color: #444444;
 
 
 }
