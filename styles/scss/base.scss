@@ -1,5 +1,4 @@
 /* CSS for Sam Huskins's Portfolio Web Site */
-
 /* Layout ========================================================================== */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -52,8 +51,13 @@ html {
   max-width: 60rem;
   width: 90%;
 }
-
-
+/* colors 
+white: #fff;
+black: #3D444D;
+grey: #7F8994;
+blue highlight: #92c4ff;
+blue dark: #5480B2;
+*/
 
 /* Utilities ========================================================================== */
 
@@ -81,8 +85,7 @@ html {
 .clearfix { *zoom: 1; }
 
 
-/* Mobile First Grid
-   ========================================================================== */
+/* Mobile First Grid ========================================================================== */
 
 .column { margin-bottom: 1.5rem; }
 
@@ -143,17 +146,8 @@ p {
   font-style: normal;
   font-weight: 400; 
   color: #fff;
-  font-size: 1.2em;
-  line-height: 1.5em;
-}
-
-p em {
-  font-family: "ff-tisa-web-pro", serif;
-  font-style: italic;
-  font-weight: 400; 
-  color: #444444;
   font-size: 1em;
-  line-height: 1.5em;
+  line-height: 1.3em;
 }
 
 a {
@@ -175,13 +169,18 @@ nav {
   min-height: 50px;
   overflow: hidden;
   padding-top: 14px;
-  border-top: 5px solid #444444;
 }
 
 nav#bus {
   background-color: #DAE3F1;
 }
 
+nav#bus a, nav#juqbox a, nav#stride a {
+  color: #fff;
+}
+nav#bus span, nav#juqbox span, nav#stride span {
+  color: #fff;
+}
 nav#juqbox {
   background-color: #F9846F;
 }
@@ -194,8 +193,8 @@ nav .column {
   margin-bottom: 5px;
 }
 
-nav span a {
-  color: #92C4FF;
+nav a {
+  color: #3D444D;
 }
 
 nav span {
@@ -203,10 +202,9 @@ nav span {
   font-style: normal;
   font-weight: 400;
   font-size: 1em;
-  color: #444444;
-  display:inline-block; 
-  vertical-align:middle
-  display: block;
+  color: #3D444D;
+  display: inline-block; 
+  vertical-align: middle;
   white-space: nowrap;
 }
 
@@ -219,12 +217,12 @@ nav ul li {
   padding: 0 1em;
 }
 
-nav ul li a {
+nav ul li {
   font-family: "brandon-grotesque",sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1em;
-  color: #444444;
+  color: #3D444D;
 }
 
 
@@ -246,11 +244,11 @@ header {
 }
 
 header h1 {
-  color: #444444;
+  color: #3D444D;
 }
 
 header p {
-  color: #444444;
+  color: #7F8994;
   position: relative;
 }
 
@@ -387,10 +385,21 @@ path.stroke-medium {
 path.stroke-thin {
   stroke-width: 1;
 }
+#android {
+  position: relative;
+  right: 4px;
+}
+
 
 #iphone {
   position:relative;
   left: 15px;
+}
+
+#browser {
+  position: relative;
+  right: 3px;
+  bottom: 3px;
 }
 
 .btn-small {
@@ -467,12 +476,21 @@ path.stroke-thin {
 }
 
 .slide_in div:nth-child(3) {
-  color: red;
   left: -150px;
   transition: left 0.2s ease;
   -webkit-transition: left 0.2s ease;
   -moz-transition: left 0.2s ease;
   z-index: 1;
+}
+
+.slide_in div#bus:nth-child(3) {
+  color: #94C0FF;
+}
+.slide_in div#juqbox:nth-child(3) {
+  color: #FFAF9E;
+}
+.slide_in div#stride:nth-child(3) {
+  color: #ABDBC1;
 }
 
 .slide_in:hover {
@@ -515,7 +533,7 @@ path.stroke-thin {
 article p {
   max-width: 30em;
   margin: 1rem 0;
-  color: #444444;
+  color: #3D444D;
 
 }
 article ul {
@@ -523,7 +541,7 @@ article ul {
 }
 article li {
   border-radius: 50%;
-  color: #FFD892;
+  color: #3D444D;
   font-family: "brandon-grotesque", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -577,7 +595,19 @@ footer a {
   font-style: normal;
   font-weight: 400;
   font-size: 1em;
-  color: #444444;
+  color: #3D444D;
+}
 
+/* Medium screens (640px) */
+@media (min-width: 40rem) { 
+  footer .column {height: 3.5rem;}
 
 }
+
+/* Large screens (1024px) */
+@media (min-width: 64rem) { 
+  h2 {margin-top: 4rem;}
+  h3 {margin-top: 2rem; }
+
+}
+
